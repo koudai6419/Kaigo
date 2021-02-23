@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>conform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="home, nursing care, sample">
+    <link rel="stylesheet" href="css/conformstyle.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  </head>
+  <body>
+    <header class="container">
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" >
+      </a>
+      <div id="openmenu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <nav id="menu">
+        <i id="closemenu" class="fas fa-times"></i>
+        <ul>
+          <li><a href="index.html">ホーム<span>Home</span></a></li>
+          <li><a href="facility.html">施設のご案内<span>Information</span></a></li>
+          <li><a href="service.html">サービスのご案内<span>Service</span></a></li>
+          <li><a href="fee.html">ご利用料金<span>Charge</span></a></li>
+          <li><a href="access.html">アクセス<span>Access</span></a></li>
+          <li><a href="question.html">よく頂く質問<span>Faq</span></a></li>
+        </ul>
+      </nav>
+      <div class="siryou_kenngaku" style="text-align: right">
+        <h2><a class="siryou" href="conform.html">資料請求・お問い合わせ</a></h2>
+        <h2><a class="kenngaku" href="visit.html">見学のお申し込み</a></h2>
+      </div>
+    </header>
+    <section class="menu">
+      <div class="haikei">
+        <img src="img/2.jpg">
+      </div>
+
+      <div class="menuber">
+        <ul>
+          <li><a href="index.html">ホーム<span>Home</span></a></li>
+          <li><a href="facility.html">施設のご案内<span>Information</span></a></li>
+          <li><a href="service.html">サービスのご案内<span>Service</span></a></li>
+          <li><a href="fee.html">ご利用料金<span>Charge</span></a></li>
+          <li><a href="access.html">アクセス<span>Access</span></a></li>
+          <li><a href="question.html">よく頂く質問<span>Faq</span></a></li>
+        </ul>
+      </div>
+
+      <div class="mokuji">
+        <h1>資料請求・お問い合わせ</h1>
+      </div>
+      <form class="conform" action="conform.php" method="post">
+        <table  class="conformtable" border="1" cellpadding="10px" cellspacing="3">
+          <tr class="name">
+            <th bgcolor="skyblue" class="table_th">お名前<span class="hissu">（＊必須）</span></th>
+            <td><input type="text" name="name" value=""></td>
+          </tr>
+          <tr class="mailadress">
+            <th bgcolor="skyblue" class="table_th">メールアドレス<span class="hissu">（＊必須）</span></th>
+            <td><input type="text" name="mailadress" value=""></td>
+          </tr>
+
+          <!-- 項目が多くてコードの入力と手直しによるミスが増えるので年齢・性別は削除（このメモは本番環境では削除する） -->
+          <!-- <tr class="age">
+            <th bgcolor="skyblue">年齢</th>
+            <td>
+              <select name="age">
+                <option value="未選択">選択してください</option>
+                <option value="20歳未満">20歳未満</option>
+                <option value="20-29歳">20-29歳</option>
+                <option value="30-39歳">30-39歳</option>
+                <option value="40-49歳">40-49歳</option>
+                <option value="50-59歳">50-59歳</option>
+                <option value="60-69歳">60-69歳</option>
+                <option value="70-79歳">70-79歳</option>
+                <option value="80歳以上">80歳以上</option>
+              </select>
+            </td>
+          </tr> -->
+          <!-- <tr　class="seibetsu">
+            <th bgcolor="skyblue">性別<span class="hissu">（＊必須）</span></th>
+            <td>
+              <input type="radio" name="gender" value="man">男性
+              <input type="radio" name="gender" value="woman">女性
+            </td>
+          </tr> -->
+
+          <tr class="syurui">
+            <th bgcolor="skyblue" class="table_th">お問い合わせの種類</th>
+            <td>
+              <select name="syurui">
+                <option value="未選択">選択してください</option>
+                <option value="お問い合わせ">お問い合わせ</option>
+                <option value="資料請求">資料請求</option>
+              </select>
+            </td>
+          </tr>
+          <tr class="naiyou">
+            <th bgcolor="skyblue" class="table_th">内容<span class="hissu">（＊必須）</span></th>
+            <td>
+              <textarea name="naiyou"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <th colspan="2">
+              <input class="submit" type="submit" value="内容の確認">
+              <input type="hidden" name="mode" value="post">
+            </th>
+          </tr>
+        </table>
+      </form>
+    </section>
+    <footer>
+      <section>
+        <div class="footermenu">
+          <ul class="footermenu1">
+            <li class="title"><a href="conform.html">資料請求</a></li>
+            <li class="title"><a href="conform.html">お問い合わせ</a></li>
+            <li class="title"><a href="visit.html">見学のお申し込み</a></li>
+          </ul>
+          <ul class="footermenu2">
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="facility.html">施設のご案内</a></li>
+            <li><a href="service.html">サービスのご案内</a></li>
+          </ul>
+          <ul class="footermenu2">
+            <li><a href="fee.html">ご利用料金</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="question.html">よく頂く質問</a></li>
+          </ul>
+          <div class="to-staff">
+            <p>スタッフの方は<a href="../staff_login/staff_login.html">こちら</a></p>
+          </div>
+        </div>
+      </section>
+      <div class="copyright">
+        <small>Copyright©
+          <p>2019 samplehome</p>
+        </small>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

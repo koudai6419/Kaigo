@@ -1,0 +1,436 @@
+/* largescreen */
+body {
+  margin: 0;
+  font-family:'Cambria','Calibri','Arial Black',sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/*  header */
+header a {
+  text-decoration: none;
+}
+.logo {
+  margin-top: 50px;
+  width: 300px;
+}
+#openmenu{
+  display: none;
+}
+#menu {
+  display: none;
+}
+#closemenu {
+  display: none;
+}
+.siryou_kenngaku {
+  display: flex;
+  justify-content: flex-end;
+}
+.siryou_kenngaku h1 {
+}
+.siryou_kenngaku a {
+  color: white;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: none;
+}
+.siryou {
+  /* border: inset; */
+  background-color: skyblue;
+  border-radius: 20px 0;
+}
+.kenngaku {
+  background-color: skyblue;
+  border-radius: 20px 0;
+  margin-left: 10px;
+}
+
+
+/* ６つのタブ */
+.menu {
+  /* clear: both; */
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+#images {
+  margin: 0 auto;
+  position: relative;
+}
+#images img {
+  width: 100%;
+}
+
+/* CSSスライドショーの設定----------------------- */
+.slide0 {
+  position: absolute;width: 100%; height: auto;
+}
+.slide1, .slide2, .slide3 {
+  position:absolute;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  animation-delay: 1s;
+}
+.slide1 {
+  animation-name: slide1;
+}
+.slide2 {
+  animation-name: slide2;
+}
+.slide3 {
+  animation-name: slide3;
+}
+/* @keyframes */
+@keyframes slide1  {
+  0% {opacity: 0; transform: scale(1);}
+	10% {opacity: 1;}
+	40% {transform: scale(1.05);}
+	50% {opacity: 1;}
+	60% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes slide2 {
+  0% {opacity: 0;}
+	25% {opacity: 0; transform: scale(1);}
+	35% {opacity: 1;}
+	65% {transform: scale(1.05);}
+	75% {opacity: 1;}
+	85% {opacity: 0;}
+	100% {opacity: 0;}
+}
+@keyframes slide3 {
+  0% {opacity: 0;}
+	50% {opacity: 0; transform: scale(1);}
+	60% {opacity: 1;}
+	80% {opacity: 1;}
+	90% {opacity: 0; transform: scale(1.05);}
+	100% {opacity: 0;}
+}
+
+
+.menuber {
+  margin-top: 40%;
+  position: relative;
+  z-index: 1;
+}
+.menuber ul {
+  list-style: none;
+}
+.menuber li {
+  float:left;
+  width:30%;
+  border: ridge;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 5px 1px;
+  line-height: 2;
+  border: 2px solid skyblue;
+}
+.menuber li a {
+  display: block;
+  font-size: 20px;
+  color: black;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.menuber li a:hover {
+  background-color: skyblue;
+  color: white;
+}
+.menuber li span {
+  font-size: 15px;
+  display: block;
+}
+/* contents */
+.contents {
+  /* background-color: skyblue; */
+}
+.content {
+  padding-top: 70px;
+  width: 100%;
+  clear: both;
+  position: relative;
+  z-index: 1;
+}
+.content h1 {
+  font-family: 'Cambria Math','ＭＳ 明朝', 'MS Mincho',sans-serif;
+  text-align: center;
+  font-size: 70px;
+  padding:10px;
+}
+.content span {
+  display: block;
+  font-size: 20px;
+  color: blue;
+}
+
+/* list */
+.list {
+  position:relative;
+  float: left;
+  /* text-align: center; */
+  width: 30%;
+  margin: 0 1.5% 40px;
+}
+.list img {
+  max-width: 100%;
+}
+.list h4 {
+  position: absolute;
+  margin: 0;
+  padding: 10%;
+  font-size: 30px;
+  text-align: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  color: white;
+  background: rgba(100, 100, 100, 0.5);
+  letter-spacing: 10px;
+}
+.list p {
+  background-color: skyblue;
+  text-align: center;
+}
+.syousai {
+  font-size: 30px;
+  width: 80%;
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+/* 重要なお知らせの部分 */
+.news {
+  clear: both;
+  width: 100%;
+  background-color: rgb(220, 220, 220);
+	padding: 20px 0;
+  margin: 5% 0;
+}
+#bikkuri {
+	color: yellow;
+	padding-right: 5px;
+}
+.news h3 {
+	margin-bottom: 0;
+  text-align: center;
+  color: green;
+}
+.newssyousai {
+  display: flex;
+	justify-content: flex-start;
+  width: 950px;
+}
+.newssyousai a {
+	text-decoration-line: none;
+	color: green;
+	padding: 0 20px;
+}
+.newswaku {
+	background-color: green;
+}
+.newswaku a {
+	color: white;
+}
+.newswaku2 a {
+  color: black;
+  text-decoration-line: underline;
+}
+
+
+footer {
+  /* clear: both; */
+  background-color: skyblue;
+}
+.footermenu {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footermenu ul {
+  /* float: left; */
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+.footermenu li a {
+  line-height: 2;
+  text-decoration: none;
+  color: gray;
+}
+.title {
+  background-color: green;
+  padding: 0 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.title a {
+  color: white !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footermenu1 li {
+  margin-left: 0;
+}
+.footermenu2 {
+  margin-top: 50px;
+}
+.to-staff {
+  background-color: green;
+  border-radius: 30px;
+  padding: 0 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 200px;
+}
+.to-staff p {
+  color: white;
+  line-height: 150px;
+  font-weight: 900;
+  transform: scale(1,2);
+}
+.to-staff a {
+  text-decoration: none;
+    color: black;
+}
+.copyright {
+  clear: both;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+.copyright p {
+  margin-bottom: 0;
+}
+
+/* small screen */
+@media (max-width: 800px){
+  /* header {
+    background-color: gray;
+  } */
+  body {
+    font-size: 15px;
+  }
+  .siryou_kenngaku h2 a {
+    font-size: 10px;
+  }
+  .menuber {
+    display: none;
+  }
+  #openmenu {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 20px;
+    right: 50px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #openmenu.hide {
+    display: none;
+  }
+  #closemenu {
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    cursor: pointer;
+  }
+  #menu.show {
+    display: block;
+  }
+  #menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    margin-right: 0;
+    z-index: 2;
+  }
+  #menu ul {
+    font-size: 25px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  #menu li{
+    padding: 20px;
+    display: block;
+    border-bottom: solid 1px gray;
+  }
+  #menu li a {
+    color: white;
+  }
+  #menu li span {
+    display: block;
+    color: gray;
+    font-size: 15px;
+  }
+
+  /* サービスについての部分 */
+  .contents {
+    margin-top: 40%;
+  }
+  .content {
+    padding-top: 0;
+    width: 80%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .content h1 {
+    font-size: 30px;
+    padding-top: 3%;
+  }
+  .content2 h4 {
+    font-size: 15px;
+  }
+  .syousai {
+    display: block;
+
+    font-size: 15px;
+  }
+  .syousai span {
+    display: none;
+  }
+
+
+/* 重要なお知らせ部分 */
+  .newssyousai {
+    flex-wrap: wrap;
+    font-size: 13px;
+  }
+  .newswaku2 {
+    width: 100%;
+    margin-top: 0;
+  }
+
+
+  .footermenu {
+    display: block;
+    padding: 10px 0;
+  }
+  .footermenu ul {
+    /* float: left; */
+    float: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  .to-staff{
+    height: 50px;
+  }
+  .to-staff p {
+    text-align: center;
+    line-height: 50px;
+  }
+}

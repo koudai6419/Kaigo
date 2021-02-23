@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="css/conform.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<meta charset="utf-8">
+<style type="text/css">
+<!--
+span { color:green; }
+-->
+</style>
+<title>確認フォーム</title>
+</head>
+<body>
+	<header class="container">
+		<a href="index.html">
+			<img src="img/logo.png" class="logo" >
+		</a>
+	</header>
+	<h3 class="kakunin">次の内容でよろしければ、送信ボタンを押してください。</h3>
+		<form class="conform" action="conform.php" method="post">
+			<table border="1" cellpadding="10px" cellspacing="3" width=60% >
+				<tr>
+					<th bgcolor="skyblue">お名前<span class="hissu">（＊必須）</span></th>
+					<td><span>!name!</span></td>
+				</tr>
+				<tr>
+					<th bgcolor="skyblue">メールアドレス<span class="hissu">（＊必須）</span></th>
+					<td><span>!mailadress!</span></td>
+				</tr>
+				<tr>
+					<th bgcolor="skyblue">お問い合わせの種類</th>
+					<td><span>!syurui!</span></td>
+				</tr>
+				<tr>
+					<th bgcolor="skyblue">内容<span class="hissu">（＊必須）</span></th>
+					<td>
+						<textarea name="naiyou" rows="8" cols="80">!naiyou!</textarea>
+					</td>
+				</tr>
+
+				<input type="hidden" name="mode" value="send">
+				<input type="hidden" name="name" value="!name!">
+				<input type="hidden" name="mailadress" value="!mailadress!">
+				<input type="hidden" name="age" value="!age!">
+				<input type="hidden" name="gender" value="!gender!">
+				<input type="hidden" name="syurui" value="!syurui!">
+				<input type="hidden" name="naiyou" value="!naiyou!">
+				<tr>
+					<th colspan="2">
+						<input class="submit" type="button" value="前に戻る" onclick="history.back()">
+						<input class="submit" type="submit" value="送信する">
+					</th>
+				</tr>
+			</table>
+		</form>
+		<footer>
+			<section>
+				<div class="footermenu">
+					<ul class="footermenu1">
+						<li class="title"><a href="conform.html">資料請求</a></li>
+						<li class="title"><a href="conform.html">お問い合わせ</a></li>
+						<li class="title"><a href="visit.html">見学のお申し込み</a></li>
+					</ul>
+					<ul class="footermenu2">
+						<li><a href="index.html">ホーム</a></li>
+						<li><a href="facility.html">施設のご案内</a></li>
+						<li><a href="service.html">サービスのご案内</a></li>
+					</ul>
+					<ul class="footermenu2">
+						<li><a href="fee.html">ご利用料金</a></li>
+						<li><a href="access.html">アクセス</a></li>
+						<li><a href="question.html">よく頂く質問</a></li>
+					</ul>
+				</div>
+			</section>
+			<div class="copyright">
+				<small>Copyright©
+					<p>2019 samplehome</p>
+				</small>
+			</div>
+		</footer>
+</body>
+</html>

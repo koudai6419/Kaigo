@@ -1,0 +1,409 @@
+/* 共通のcss */
+body {
+  margin: 0;
+  font-family:'Cambria','Calibri','Arial Black',sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+header a {
+  text-decoration: none;
+}
+.logo {
+  margin-top: 50px;
+  width: 300px;
+}
+#openmenu{
+  display: none;
+}
+#menu {
+  display: none;
+}
+#closemenu {
+  display: none;
+}
+.siryou_kenngaku {
+  display: flex;
+  justify-content: flex-end;
+}
+.siryou_kenngaku h1 {
+}
+.siryou_kenngaku a {
+  color: white;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: none;
+}
+.siryou {
+  /* border: inset; */
+  background-color: skyblue;
+  border-radius: 20px 0;
+}
+.kenngaku {
+  background-color: skyblue;
+  border-radius: 20px 0;
+  margin-left: 10px;
+}
+
+
+/* ここからbody */
+.haikei {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  opacity: 0.8;
+}
+.menuber {
+  margin-top: -15%;
+  position: relative;
+  z-index: 1;
+}
+.menuber ul {
+  list-style: none;
+}
+.menuber li {
+  float:left;
+  width:30%;
+  border: ridge;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 5px 1px;
+  line-height: 2;
+  border: 2px solid skyblue;
+}
+.menuber li a {
+  display: block;
+  font-size: 20px;
+  color: black;
+  padding-top: 10px;
+  text-decoration: none;
+}
+.menuber li a:hover {
+  background-color: skyblue;
+  color: white;
+}
+.menuber li span {
+  font-size: 15px;
+  display: block;
+}
+.mokuji {
+  clear: both;
+  font-size: 30px;
+  z-index: 1;
+  text-align: center;
+  padding-top: 30px;
+}
+/* ーーーーーーーここまで共通のCSS ーーーーーーーー*/
+
+/* ＝＝＝＝＝＝＝ここから施設のご案内＝＝＝＝＝＝＝ */
+.sisetu_facility {
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+.sisetu_facility caption {
+  font-weight: solid;
+  font-size: 20px;
+}
+
+/* ===========ここからサービスのご案内=============== */
+.mokuji_service h2{
+  font-family: 'Cambria Math','ＭＳ 明朝', 'MS Mincho',sans-serif;
+  text-align: center;
+  border-bottom: 3px solid #df882e;
+}
+.mokuji_service1 {
+  width: 90%;
+  margin: 0 auto;
+}
+.mokuji_service1 h3{
+  font-family: 'Cambria Math','ＭＳ 明朝', 'MS Mincho',sans-serif;
+  color: #df882e;
+}
+.service_img p {
+  font-size: 15px;
+  width: 50%;
+  float: left;
+}
+.service_img img{
+  width: 30%;
+  margin-left: 10%;
+}
+.mokuji_service2 {
+  clear: both;
+  width: 90%;
+  margin: 0 auto;
+}
+.mokuji_service2 h3{
+  width: 500px;
+  border-bottom: 3px solid #df882e;
+}
+.mokuji_service2 ul {
+  text-decoration: none;
+}
+.mokuji_service2 li {
+  line-height: 2;
+  border-bottom: 1px dashed #df882e;
+}
+
+.photo {
+  width:80%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+.photo h3{
+  width: 500px;
+  color: #df882e;
+}
+.photo1 {
+  /* display: flex; */
+  flex-flow: row wrap;
+}
+.photo1 img{
+  /* float: right; */
+  width:30%;
+  height: 200px;
+  margin-left: 15px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+/* ==============feeのCSS====================== */
+.fee_table {
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 10%;
+}
+.fee_table caption {
+  font-size: 20px;
+}
+.fee_table1 {
+  background-color: yellow;
+}
+
+/* ==================visitのCSS===================== */
+.visit {
+  margin-bottom: 10%;
+}
+.visit p{
+  font-size: 30px;
+  text-align: center;
+}
+
+/* =================questionのCSS======================== */
+.faq {
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  padding: 1%;
+  margin-bottom: 10%;
+}
+.faq h3{
+  text-align: center;
+}
+.question_wrapper{
+  width: 80%;
+  margin: 0 auto;
+}
+.question_lists {
+  list-style-type: none;
+}
+.question_list {
+  position: relative;
+  border-bottom: solid 1px gray;
+  cursor: pointer;
+}
+.question_list span {
+  position: absolute;
+  right: 5px;
+  top: 0;
+  color: gray;
+}
+.question i {
+  color: green;
+  margin-right: 10px;
+}
+.answer {
+  display:none;
+}
+.answer i {
+  color: red;
+  margin-right: 10px;
+}
+.answer.is-open {
+  display: block;
+}
+
+
+/* =======================accessのcss=============================== */
+#location {
+  margin-bottom: 10%;
+}
+.access {
+  width:100%;
+  text-align: center;
+}
+
+/* ここからfooter */
+footer {
+  clear: both;
+  background-color: skyblue;
+}
+.footermenu {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2% 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footermenu ul {
+  /* float: left; */
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+.footermenu li a {
+  line-height: 2;
+  text-decoration: none;
+  color: gray;
+}
+.footermenu2 {
+  margin-top: 50px;
+}
+.title {
+  background-color: green;
+  padding: 0 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.footermenu1 li {
+  margin-left: 0;
+}
+.to-staff {
+  background-color: green;
+  border-radius: 30px;
+  padding: 0 30px;
+  margin-top: auto;
+  margin-bottom: auto;
+  height: 200px;
+}
+.to-staff p {
+  color: white;
+  line-height: 150px;
+  font-weight: 900;
+  transform: scale(1,2);
+}
+.to-staff a {
+  text-decoration: none;
+    color: black;
+}
+.title a {
+  color: white !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+.copyright {
+  clear: both;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+.copyright a {
+  text-decoration: none;
+  color: white;
+}
+.copyright p {
+  margin-bottom: 0;
+}
+
+/* small screen */
+@media (max-width: 800px){
+  /* header {
+    background-color: gray;
+  } */
+  body {
+    font-size: 15px;
+  }
+  .siryou_kenngaku h1 a {
+    font-size: 10px;
+  }
+  .menuber {
+    display: none;
+  }
+  #openmenu {
+    display: block;
+    position: absolute;
+    float: right;
+    top: 20px;
+    right: 50px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  #openmenu.hide {
+    display: none;
+  }
+  #closemenu {
+    display: block;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    right: 70px;
+    cursor: pointer;
+  }
+  #menu.show {
+    display: block;
+  }
+  #menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    margin-right: 0;
+    z-index: 2;
+  }
+  #menu ul {
+    font-size: 25px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  #menu li{
+    padding: 20px;
+    display: block;
+    border-bottom: solid 1px gray;
+  }
+  #menu li a {
+    color: white;
+  }
+  #menu li span {
+    display: block;
+    color: gray;
+    font-size: 15px;
+  }
+
+  .fee_table {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10%;
+  }
+
+  .footermenu {
+    display: block;
+    padding: 10px 0;
+  }
+  .footermenu ul {
+    /* float: left; */
+    float: none;
+    padding-left: 0;
+    text-align: center;
+  }
+  .to-staff{
+    height: 50px;
+  }
+  .to-staff p {
+    text-align: center;
+    line-height: 50px;
+  }
+}

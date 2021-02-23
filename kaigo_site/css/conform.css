@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family:'Cambria','Calibri','Arial Black',sans-serif;
+}
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* header */
+.logo {
+  margin-top: 50px;
+  width: 300px;
+}
+
+
+/* conf.tmplのCSS */
+.kakunin {
+  text-align: center;
+}
+.conform {
+  margin-bottom: 10%;
+}
+table {
+  margin: 0 auto;
+}
+.hissu {
+  font-size: 1px;
+  color: red;
+}
+.submit {
+  font-size: 20px;
+  font-weight: bold;
+  border: solid;
+  border-color: gray;
+  padding: 10px 20px;
+  background-color: skyblue;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+/* ここからfooter */
+footer {
+  /* clear: both; */
+  background-color: skyblue;
+}
+.footermenu {
+  width: 80%;
+  margin: 0 auto;
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-around;
+}
+.footermenu ul {
+  /* float: left; */
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+.footermenu li a {
+  line-height: 2;
+  text-decoration: none;
+  color: gray;
+}
+.title {
+  background-color: green;
+  padding: 0 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+.title a {
+  color: white !important;
+  font-weight: bold;
+  font-size: 20px;
+}
+.footermenu1 li {
+  margin-left: 0;
+}
+.footermenu2 {
+  margin-top: 50px;
+}
+.copyright {
+  clear: both;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+.copyright a {
+  text-decoration: none;
+  color: white;
+}
+.copyright p {
+  margin-bottom: 0;
+}
+
+/* ここからsendのcss */
+.sendthanks{
+  padding: 10%;
+  margin: 0 auto;
+}
+.sendthanks h3,p{
+  text-align: center;
+}
+.to_top{
+  text-align: center;
+}
+
+/* ここからerrorのcss */
